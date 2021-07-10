@@ -5,6 +5,7 @@
   --db: #000F47;
 }
 
+
 *{
     padding: 0;
     margin: 0;
@@ -15,6 +16,7 @@ body{
   box-sizing: border-box;
 
 }
+
 .nav{
 
     display: flex;
@@ -89,7 +91,7 @@ li{
 }
 .bar{
     width: 100%;
-    background: #fff;
+    background: black;
     height: 3px;
 }
 
@@ -220,33 +222,7 @@ line-height: 2;
   clear: both;
 }
 
-/* Responsive columns */
-@media screen and (max-width: 1000px) {
-  .column {
-    width: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
-  }
-  .logo{
-      padding: 0 0.5em;
-  }
-  .toggle{
-    display: flex;
-  }
 
-  .nav ul{
-      padding-top: 3em;
-      flex-direction: column;
-
-  }
-  .nav li{
-      padding-bottom: 2em;
-      text-align: center;
-  }
-
-}
 
 
 /* Style the counter cards */
@@ -384,4 +360,38 @@ footer{
   padding: 0.3rem;
   background-color: var(--db);
   color: white;
+}
+/* Responsive columns */
+@media screen and (max-width: 1000px) {
+  *{
+
+  }
+  .column {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .logo{
+      padding: 0 0.5em;
+  }
+  .toggle{
+    display: flex;
+  }
+
+  .nav ul{
+      padding-top: 3em;
+      flex-direction: column;
+      display: none;
+  }
+  .nav li{
+      padding-bottom: 2em;
+      text-align: center;
+  }
+  .intro{
+    height: 100%;
+  }
+
 }
