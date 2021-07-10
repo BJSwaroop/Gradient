@@ -16,7 +16,12 @@ body{
   box-sizing: border-box;
 
 }
+@media screen and (min-width: 1000px) {
 
+.mobile{
+  display: none
+}
+}
 .nav{
 
     display: flex;
@@ -363,8 +368,8 @@ footer{
 }
 /* Responsive columns */
 @media screen and (max-width: 1000px) {
-  *{
-
+  .desktop{
+    display: none;
   }
   .column {
     width: 80%;
@@ -373,14 +378,12 @@ footer{
     justify-content: center;
     margin-bottom: 20px;
   }
-
   .logo{
       padding: 0 0.5em;
   }
   .toggle{
     display: flex;
   }
-
   .nav ul{
       padding-top: 3em;
       flex-direction: column;
@@ -391,7 +394,46 @@ footer{
       text-align: center;
   }
   .intro{
-    height: 100%;
+    padding: 0 2rem 0 2rem;
+    text-align: center;
+    height: 80vh;
   }
 
+  h1{
+    font-size: 6rem;
+  }
+  .intro p{
+    width: 85%;
+    font-size: 2.2rem;
+    text-align: left;
+  }
+  .intro-buttons{
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .intro-buttons button,.button,.cardbutton{
+
+    padding:1.8rem 6rem;
+    color: #fff;
+    background-color: var(--db);
+    font-size: 2rem;
+    border-radius: 3rem;
+  }
+  .research,.Market-analysis{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .research img,.Market-analysis img{
+    width: 50rem;
+  }
+  .matter p{
+    padding-top: 2rem;
+    width: 100%;
+    font-size: 2.2rem;
+  }
 }
