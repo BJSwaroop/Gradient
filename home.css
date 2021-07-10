@@ -406,6 +406,9 @@ footer{
   .logo h1{
     font-size: 3rem;
   }
+  .teamimg img{
+    height: 50rem;
+  }
   h1{
     font-size: 6rem;
   }
