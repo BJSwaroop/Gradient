@@ -14,7 +14,7 @@ body{
   font-family: 'Poppins', sans-serif;
   background-color: var(--bg);
   box-sizing: border-box;
-
+  width: 100%;
 }
 @media screen and (min-width: 1000px) {
 
@@ -22,8 +22,11 @@ body{
   display: none
 }
 }
-.nav{
 
+.nav{
+  background-color: var(--bg);
+    width: 100vw;
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items:  center;
@@ -84,14 +87,11 @@ li{
     letter-spacing: 0.8rem;
 }
 .toggle{
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
     display: none;
     flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
+    justify-content: space-evenly;
+    width: 9rem;
+    height: 6rem;
     cursor: pointer;
 }
 .bar{
@@ -371,6 +371,10 @@ footer{
   .desktop{
     display: none;
   }
+  .nav{
+    height: 20rem;
+  }
+
   .column {
     width: 100%;
     display: flex;
@@ -399,7 +403,9 @@ footer{
     text-align: center;
     height: 80vh;
   }
-
+  .logo h1{
+    font-size: 3rem;
+  }
   h1{
     font-size: 6rem;
   }
@@ -432,7 +438,11 @@ footer{
   .research img,.Market-analysis img{
     width: 50rem;
   }
-  .matter p,.our-info p,.info p,.card p{
+  .matter p{
+    padding-top: 3rem;
+    font-size: 2rem;
+  }
+  .our-info p,.info p,.card p{
     padding-top: 2rem;
     width: 100%;
     font-size: 2.2rem;
@@ -473,7 +483,10 @@ footer{
   }
   .card{
     height: 70rem;
-    width: 40rem;
+    width: 50rem;
+  }
+  .header h1{
+    font-size: 4rem;
   }
   .tbtn{
     padding:0.3rem 1.2rem;
@@ -503,5 +516,29 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .end{
+    display: flex;
+    flex-direction: column;
+  }
+  .address,.links,.end-services{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    align-items: flex-start;
+    justify-content: space-evenly;
+  }
+  .header h2{
+    font-size: 4rem;
+  }
+  .endpara p,.para h3,.phone p,.mail p,.bn,.copyright p{
+    font-size: 2rem;
+  }
+  .end-links li{
+    padding: 1rem;
+  }
+  .copyright{
+    padding: 1rem;
   }
 }
