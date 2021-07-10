@@ -248,7 +248,7 @@ line-height: 2;
 }
 .card-img img{
   width: 100%;
-  height: 20rem;
+  height: 35rem;
   border-radius: 2rem;
 }
 .cardbutton{
@@ -372,8 +372,9 @@ footer{
     display: none;
   }
   .column {
-    width: 80%;
+    width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
@@ -431,9 +432,76 @@ footer{
   .research img,.Market-analysis img{
     width: 50rem;
   }
-  .matter p{
+  .matter p,.our-info p,.info p,.card p{
     padding-top: 2rem;
     width: 100%;
     font-size: 2.2rem;
+  }
+  .workinfo-mobile{
+    width: 100%;
+    height: 58rem;
+    background-image: url("Files/Assets/Process(tab and mobile).svg");
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .header h1{
+    font-size: 4rem;
+  }
+
+  .sub{
+    font-size: 1.4rem;
+  }
+  .one1,.five5{
+    padding-left: 6rem;
+  }
+  .three3{
+    padding-left: 3rem;
+  }
+  .two2{
+    text-align: right;
+    padding-right: 8rem;
+  }
+
+  .four4{
+    text-align: right;
+    padding-right: 3rem;
+  }
+  .card{
+    height: 70rem;
+    width: 40rem;
+  }
+  .tbtn{
+    padding:0.3rem 1.2rem;
+
+    font-size: 1.5rem;
+  }
+
+  .protfolio-images img{
+    padding: 1rem;
+    width: 43rem;
+    height: 40rem;
+  }
+  .tcard{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+  }
+  .disable{
+    display: none;
+  }
+  .testimonial-img img{
+    width: 15rem;
+    border-radius: 2rem;
+    padding-top: 2rem;
+  }
+  .testimonials-corousel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
