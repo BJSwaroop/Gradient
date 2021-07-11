@@ -89,10 +89,11 @@ li{
 .toggle{
     display: none;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     width: 9rem;
     height: 6rem;
     cursor: pointer;
+    padding-right: 8rem;
 }
 .bar{
     width: 100%;
