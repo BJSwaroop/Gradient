@@ -21,6 +21,12 @@ body{
 .mobile{
   display: none
 }
+
+.card-img img{
+  width: 100%;
+  height: 20rem;
+  border-radius: 2rem;
+}
 }
 
 .nav{
@@ -86,20 +92,103 @@ li{
     font-size: 1rem;
     letter-spacing: 0.8rem;
 }
-.toggle{
-    display: none;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 9rem;
-    height: 6rem;
-    cursor: pointer;
-    padding-right: 8rem;
+.header a {
+  font-size: 18px;
+  margin-left: 20px;
 }
-.bar{
-    width: 100%;
-    background: black;
-    height: 3px;
+
+/* Pure CSS3 Switch */
+
+.clear-menu-btn {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
 }
+
+.clear-menu-btn input[type="checkbox"] {
+  position: absolute;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.clear-menu-btn input[type="checkbox"]:hover { cursor: pointer; }
+
+.clear-menu-btn input[type="checkbox"]:checked ~ .top, .clear-menu-btn input[type="checkbox"]:checked ~ .bottom { top: 50%; }
+
+.clear-menu-btn input[type="checkbox"]:checked ~ .top {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.clear-menu-btn input[type="checkbox"]:checked ~ .bottom {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.clear-menu-btn input[type="checkbox"]:checked ~ .middle {
+  filter: alpha(opacity=0);
+  opacity: 0;
+}
+
+.clear-menu-btn input[type="checkbox"]:checked ~ .circle {
+  filter: alpha(opacity=100);
+  opacity: 1;
+}
+
+.clear-menu-btn span {
+  position: absolute;
+  display: block;
+  width: 100px;
+  height: 1px;
+  background-color: #000;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  z-index: -1;
+}
+
+.clear-menu-btn .top { top: 15%; }
+
+.clear-menu-btn .middle { top: 50%; }
+
+.clear-menu-btn .bottom { top: 85%; }
+
+.clear-menu-btn .circle {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  filter: alpha(opacity=0);
+  opacity: 0;
+  width: 120px;
+  height: 120px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 2px solid #000;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  z-index: -1;
+}
+
 
 .intro{
   display: flex;
@@ -247,11 +336,6 @@ line-height: 2;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
-.card-img img{
-  width: 100%;
-  height: 35rem;
-  border-radius: 2rem;
-}
 .cardbutton{
   width: 100%;
 }
@@ -296,9 +380,16 @@ box-shadow:  6px 6px 12px #bcbcbc,
   width: 8rem;
   border-radius: 2rem;
 }
-.testimonials-corousel.cardbody.card{
-  display: flex;
+.cardbody{
+  display: contents;
 
+}
+
+.testimonials-corousel{
+  width: 90vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 .tcard{
     display: flex;
@@ -513,10 +604,10 @@ footer{
     border-radius: 2rem;
     padding-top: 2rem;
   }
-  .testimonials-corousel{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .testimonials-corousel.left-arrow img{
+    border-radius: 50%;
+    border: 2px solid black;
+    transform:rotateY(180deg);
   }
   .end{
     display: flex;
@@ -543,7 +634,12 @@ footer{
     padding: 1rem;
   }
 
+  .card-img img{
+    width: 100%;
+    height: 40rem;
+    border-radius: 2rem;
+  }
   .teamimg img{
-    height: 50rem;
+    height: 53rem;
   }
 }
