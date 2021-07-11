@@ -365,7 +365,7 @@ box-shadow:  6px 6px 12px #bcbcbc,
 }
 .protfolio-images{
 
-  width: 80%;
+  width: 90%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -374,7 +374,7 @@ box-shadow:  6px 6px 12px #bcbcbc,
 }
 .protfolio-images img{
   padding: 1rem;
-  width: 23rem;
+  width: 27rem;
 }
 .testimonial-img img{
   width: 8rem;
@@ -590,8 +590,8 @@ footer{
 
   .protfolio-images img{
     padding: 1rem;
-    width: 43rem;
-    height: 40rem;
+    width: 53rem;
+    height: 45rem;
   }
   .tcard{
     width: 60%;
