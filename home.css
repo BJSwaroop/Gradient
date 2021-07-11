@@ -466,7 +466,9 @@ footer{
   .nav{
     height: 20rem;
   }
-
+  body{
+    width: 100vw;
+  }
   .column {
     width: 100%;
     display: flex;
