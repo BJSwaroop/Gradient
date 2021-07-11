@@ -406,9 +406,6 @@ footer{
   .logo h1{
     font-size: 3rem;
   }
-  .teamimg img{
-    height: 50rem;
-  }
   h1{
     font-size: 6rem;
   }
@@ -543,5 +540,9 @@ footer{
   }
   .copyright{
     padding: 1rem;
+  }
+
+  .teamimg img{
+    height: 50rem;
   }
 }
