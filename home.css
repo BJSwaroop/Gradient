@@ -29,6 +29,140 @@ body{
 }
 }
 
+header {
+    width: 100vw;
+    position: fixed;
+    background-color: var(--bg);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px 5%;
+    border-style: hidden;
+box-shadow: 1px 4px 3px lightgrey;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px 10px;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+/*
+.nav__links li a:hover {
+    color: #0088a9
+} */
+
+.menu {
+    display: none;
+}
+button {
+    padding: 7px 15px;
+    background-color: var(--bg);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: var(--bg);
+    overflow-x: hidden;
+    transition: all 0.5s ease 0s;
+}
+
+
+.overlay__content {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay a {
+  padding: 15px;
+  font-size: 10rem;
+  display: block;
+  transition: all 0.3s ease 0s;
+}
+
+.overlay .close {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 40px;
+  color: #000;
+}
+
+.nav-head{
+  font-size:1rem;
+  letter-spacing: 1.1rem;
+}
+.toggle{
+    position: absolute;
+    top: 9rem;
+    right: 5rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 10rem;
+    height: 5rem;
+    cursor: pointer;
+}
+.bar{
+    width: 100%;
+    background: #000;
+    height: 3px;
+}
+
+.bn29 {
+    border: none;
+    padding: 0.8em 1em;
+    outline: none;
+    color: #000;
+    font-weight: bold;
+    font-style: 2em;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    background: none;
+    transition: 0.5s;
+  }
+
+  .bn29:hover:after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 10em;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    width: 105%;
+    height: 105%;
+    content: "";
+    z-index: -2;
+    background-size: 400% 400%;
+    background: linear-gradient(
+      180deg,
+      white,
+      lightgrey
+    );
+  }
+  .bn29:hover:before {
+    width: 115%;
+    height: 115%;
+  }
 .nav{
   background-color: var(--bg);
     width: 100vw;
@@ -47,45 +181,10 @@ body{
     padding-right: 8rem;
 
 }
-li{
+li, a{
     list-style: none;
     padding: 0.2rem;
-}
-.bn29 {
-  border: none;
-  padding: 0.8em 1em;
-  outline: none;
-  color: #000;
-  font-weight: bold;
-  font-style: 2em;
-  position: relative;
-  z-index: 1;
-  cursor: pointer;
-  background: none;
-  transition: 0.5s;
-}
-
-.bn29:hover:after {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  border-radius: 10em;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-  width: 105%;
-  height: 105%;
-  content: "";
-  z-index: -2;
-  background-size: 400% 400%;
-  background: linear-gradient(
-    180deg,
-    white,
-    lightgrey
-  );
-}
-.bn29:hover:before {
-  width: 115%;
-  height: 115%;
+    text-decoration: none;
 }
 .logo h1{
     font-weight: bold;
@@ -464,8 +563,34 @@ footer{
   .desktop{
     display: none;
   }
-  .nav{
+  .nav__links, .cta {
+        display: none;
+    }
+    .menu {
+        display: inherit;
+    }
+.toggle{
+  display:flex;
+  padding-right: 3rem;
+}
+
+.overlay a {
+        font-size: 3rem;
+    }
+    .overlay .close {
+        font-size: 14rem;
+        font-weight: lighter;
+        top: 1rem;
+        right: 2rem;
+    }
+
+    .nav-head{
+      font-size:3rem;
+      letter-spacing: 1.1rem;
+    }
+  header{
     height: 20rem;
+    justify-content: space-between;
   }
   body{
     width: 100vw;
@@ -478,25 +603,14 @@ footer{
     justify-content: center;
     margin-bottom: 20px;
   }
+
   .logo{
       padding: 0 0.5em;
-  }
-  .toggle{
-    display: flex;
-  }
-  .nav ul{
-      padding-top: 3em;
-      flex-direction: column;
-      display: none;
-  }
-  .nav li{
-      padding-bottom: 2em;
-      text-align: center;
   }
   .intro{
     padding: 0 2rem 0 2rem;
     text-align: center;
-    height: 90vh;
+    height: 100vh;
   }
   .logo h1{
     font-size: 3rem;
@@ -606,11 +720,6 @@ footer{
     width: 15rem;
     border-radius: 2rem;
     padding-top: 2rem;
-  }
-  .testimonials-corousel.left-arrow img{
-    border-radius: 50%;
-    border: 2px solid black;
-    transform:rotateY(180deg);
   }
   .end{
     display: flex;
