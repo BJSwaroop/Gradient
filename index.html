@@ -1,403 +1,469 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Gradient</title>
-  </head>
-  <link rel="stylesheet" href="home.css">
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<head>
+  <meta charset="utf-8">
+  <title>Gradient</title>
+</head>
+<link rel="stylesheet" href="home.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 
-  <body>
-    <header>
-            <div class="nav-head">
-              <h2>GRADIENT</h2>
-            </div>
-            <nav>
-                <ul class="nav__links">
-                    <li class="lihome"><a href="#home"><button class="bn29">HOME</button></a></li>
-                    <li class="liresearch"><a href="#research"><button class="bn29">EXPLORE</button></a></li>
-                    <li class="liservices"><a href="#services"><button class="bn29">SERVICES</button></a></li>
-                    <li class="liprotfolio"><a href="#protfolio"><button class="bn29">PROTFOLIO</button></a></li>
-                    <li class="liteam"><a href="#team"><button class="bn29">OUR TEAM</button></a></li>
-                    <li class="litestimonials"><a href="#testimonials"><button class="bn29">TESTIMONIALS</button></a></li>
-                    <button class="button"><span>Contact Us</span></button>
-                </ul>
-            </nav>
-            <a onclick="openNav()" class="menu" href="#"><div class="toggle">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div></a>
-        </header>
-        <div id="mobile__menu" class="overlay">
-            <a class="close" onclick="closeNav()">&times;</a>
-            <div class="overlay__content">
-                 <a onclick="closeNav()" href="#home"class="bn29">HOME</a>
-                 <br>
-                 <a onclick="closeNav()" href="#explore"class="bn29">EXPLORE</a>
-                 <br>
-                 <a onclick="closeNav()" href="#services"class="bn29">SERVICES</a>
-                 <br>
-                 <a onclick="closeNav()" href="#protfolio"class="bn29">PROTFOLIO</a>
-                 <br>
-                 <a onclick="closeNav()" href="#team"class="bn29">OUR TEAM</a>
-                 <br>
-                 <a onclick="closeNav()" href="#testimonials"class="bn29">TESTIMONIALS</a>
-                 <br>
-<br>
-                <button class="button"><span>Contact Us</span></button>
-            </div>
-        </div>
-    <div id="home" class="intro section" data-aos="fade-up">
-      <div class="head"><h1>Hi, We are from Gradient</h1></div>
+<body>
+  <!-- header contains Brand name and nav elements of desktop version -->
+  <header>
+    <div class="nav-head">
+      <h2>GRADIENT</h2>
+    </div>
+    <nav>
+      <ul class="nav__links">
+        <li class="lihome"><a href="#home"><button class="bn29">HOME</button></a></li>
+        <li class="liresearch"><a href="#research"><button class="bn29">EXPLORE</button></a></li>
+        <li class="liservices"><a href="#services"><button class="bn29">SERVICES</button></a></li>
+        <li class="liprotfolio"><a href="#protfolio"><button class="bn29">PROTFOLIO</button></a></li>
+        <li class="liteam"><a href="#team"><button class="bn29">OUR TEAM</button></a></li>
+        <li class="litestimonials"><a href="#testimonials"><button class="bn29">TESTIMONIALS</button></a></li>
+        <button class="button"><span>Contact Us</span></button>
+      </ul>
+    </nav>
+    <a onclick="openNav()" class="menu" href="#">
+      <div class="toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </a>
+  </header>
+  <!-- nav items for mobile view -->
+  <div id="mobile__menu" class="overlay">
+    <a class="close" onclick="closeNav()">&times;</a>
+    <div class="overlay__content">
+      <a onclick="closeNav()" href="#home" class="bn29">HOME</a>
+      <br>
+      <a onclick="closeNav()" href="#explore" class="bn29">EXPLORE</a>
+      <br>
+      <a onclick="closeNav()" href="#services" class="bn29">SERVICES</a>
+      <br>
+      <a onclick="closeNav()" href="#protfolio" class="bn29">PROTFOLIO</a>
+      <br>
+      <a onclick="closeNav()" href="#team" class="bn29">OUR TEAM</a>
+      <br>
+      <a onclick="closeNav()" href="#testimonials" class="bn29">TESTIMONIALS</a>
+      <br>
+      <br>
+      <button class="button"><span>Contact Us</span></button>
+    </div>
+  </div>
+
+  <!-- Here the main body starts where all the sections are divided into several divs: intro, research,MarketAnalysis,working,so on... -->
+  <div id="home" class="intro section" data-aos="fade-up">
+    <div class="head">
+      <h1>Hi, We are from Gradient</h1>
+    </div>
     <div class="intro-info" data-aos="fade-up">
       <p>Pellentesque habitant morbi tristique senectus et netus et malesuada
-  fames ac turpis egestas. Ut arcu libero, pulvinar non massa sed,
-  accumsan scelerisque dui. Morbi purus mauris, vulputate quis felis nec, </p>
+        fames ac turpis egestas. Ut arcu libero, pulvinar non massa sed,
+        accumsan scelerisque dui. Morbi purus mauris, vulputate quis felis nec, </p>
     </div>
     <br>
-    <div class="intro-buttons" >
+    <div class="intro-buttons">
       <button type="button" name="button">Start Up</button>
 
       <button type="button" name="button">Bussiness</button>
     </div>
+  </div>
+
+  <!-- research div  -->
+  <div id="research" class="research section">
+    <div class="head mobile" data-aos="fade-up">
+      <h1>Research</h1>
     </div>
-    <div id="research"class="research section" >
-      <div class="head mobile" data-aos="fade-up"><h1>Research</h1></div>
 
-  <img data-aos="fade-up" src="Images/research.svg"alt="reaserch-img">
+    <img data-aos="fade-up" src="Images/research.svg" alt="reaserch-img">
 
-      <div class="matter">
+    <div class="matter">
 
-        <div class="head desktop" data-aos="fade-left"><h1>Research</h1></div>
-
-       <p data-aos="fade-up">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
- Ipsum has been the industry's standard dummy text ever since the </p>
-     </div>
-      </div>
-      <div id="Market-analysis" class="Market-analysis">
-        <div class="head mobile" data-aos="fade-up"><h1>Market Analysis</h1></div>
-  <img class="mobile" data-aos="fade-up" src="Images/market analysis.svg"alt="MarketAnalysis-img">
-
-
-      <div class="matter">
-        <div class="head desktop" data-aos="fade-right"><h1>Market Analysis</h1></div>
-
-        <p data-aos="fade-up">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-  Ipsum has been the industry's standard dummy text ever since thes</p>
-
+      <div class="head desktop" data-aos="fade-left">
+        <h1>Research</h1>
       </div>
 
+      <p data-aos="fade-up">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+        Ipsum has been the industry's standard dummy text ever since the </p>
+    </div>
+  </div>
 
-        <img class="desktop" data-aos="fade-up" src="Images/market analysis.svg"alt="MarketAnalysis-img">
+  <!-- MarketAnalysis div  -->
+  <div id="Market-analysis" class="Market-analysis">
+    <div class="head mobile" data-aos="fade-up">
+      <h1>Market Analysis</h1>
+    </div>
+    <img class="mobile" data-aos="fade-up" src="Images/market analysis.svg" alt="MarketAnalysis-img">
 
+
+    <div class="matter">
+      <div class="head desktop" data-aos="fade-right">
+        <h1>Market Analysis</h1>
       </div>
-    <div id="working" class="working">
-        <div class="head" data-aos="fade-up"><h1>How Does It Works</h1></div>
-        <br>
-      <div class="info" data-aos="fade-up">
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+
+      <p data-aos="fade-up">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+        Ipsum has been the industry's standard dummy text ever since thes</p>
+
+    </div>
+
+
+    <img class="desktop" data-aos="fade-up" src="Images/market analysis.svg" alt="MarketAnalysis-img">
+
+  </div>
+
+  <!-- working div  -->
+  <div id="working" class="working">
+    <div class="head" data-aos="fade-up">
+      <h1>How Does It Works</h1>
+    </div>
+    <br>
+    <div class="info" data-aos="fade-up">
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
         Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-      </div>
-      <br>
-      <div class="workinfo-mobile mobile" data-aos="fade-up" >
+    </div>
+    <br>
+    <div class="workinfo-mobile mobile" data-aos="fade-up">
 
       <div class="sub">
-        <div class="one1"data-aos="fade-up"><h2>Concept</h2></div>
-      </div>
-      <div class="sub">
-        <div class="two2"data-aos="fade-up"><h2>Budget</h2></div>
-
-      </div>
-      <div class="sub">
-        <div class="three3"data-aos="fade-up"><h2>Demonstrate</h2></div>
-
-      </div>
-      <div class="sub">
-        <div class="four4"data-aos="fade-up"><h2>Development</h2></div>
-
-      </div>
-      <div class="sub">
-        <div class="five5"data-aos="fade-up"><h2>Launch</h2></div>
-
-      </div>
-      </div>
-      <div class="workinfo desktop" data-aos="fade-up">
-        <div class="subinfo" data-aos="fade-up"><div class="one" ><h2>Concept</h2>
-        </div>
-        <div class="para" >
-          <p>Lorem Ipsum is simply
-dummy text of the
-printing and typesetting</p>
+        <div class="one1" data-aos="fade-up">
+          <h2>Concept</h2>
         </div>
       </div>
-        <div class="subinfo" data-aos="fade-up"><div class="two"><h2>Demonstrate</h2>
-        </div><div class="para" >
-          <p >Lorem Ipsum is simply
-dummy text of the
-printing and typesetting</p>
-        </div></div>
-        <div class="subinfo" data-aos="fade-up"><div class="three"><h2>Budget</h2>
-        </div><div class="para" >
-          <p>Lorem Ipsum is simply
-dummy text of the
-printing and typesetting</p>
-        </div></div>
-        <div class="subinfo" data-aos="fade-up"><div class="four"><h2>Development</h2>
-        </div><div class="para" >
-          <p>Lorem Ipsum is simply
-dummy text of the
-printing and typesetting</p>
-        </div></div>
-        <div class="subinfo" data-aos="fade-up"><div class="five"><h2>Launch</h2>
-        </div><div class="para" >
-          <p>Lorem Ipsum is simply
-dummy text of the
-printing and typesetting</p>
-        </div></div>
+      <div class="sub">
+        <div class="two2" data-aos="fade-up">
+          <h2>Budget</h2>
+        </div>
+
       </div>
+      <div class="sub">
+        <div class="three3" data-aos="fade-up">
+          <h2>Demonstrate</h2>
+        </div>
+
+      </div>
+      <div class="sub">
+        <div class="four4" data-aos="fade-up">
+          <h2>Development</h2>
+        </div>
+
+      </div>
+      <div class="sub">
+        <div class="five5" data-aos="fade-up">
+          <h2>Launch</h2>
+        </div>
+
+      </div>
+    </div>
+    <div class="workinfo desktop" data-aos="fade-up">
+      <div class="subinfo" data-aos="fade-up">
+        <div class="one">
+          <h2>Concept</h2>
+        </div>
+        <div class="para">
+          <p>Lorem Ipsum is simply
+            dummy text of the
+            printing and typesetting</p>
+        </div>
+      </div>
+      <div class="subinfo" data-aos="fade-up">
+        <div class="two">
+          <h2>Demonstrate</h2>
+        </div>
+        <div class="para">
+          <p>Lorem Ipsum is simply
+            dummy text of the
+            printing and typesetting</p>
+        </div>
+      </div>
+      <div class="subinfo" data-aos="fade-up">
+        <div class="three">
+          <h2>Budget</h2>
+        </div>
+        <div class="para">
+          <p>Lorem Ipsum is simply
+            dummy text of the
+            printing and typesetting</p>
+        </div>
+      </div>
+      <div class="subinfo" data-aos="fade-up">
+        <div class="four">
+          <h2>Development</h2>
+        </div>
+        <div class="para">
+          <p>Lorem Ipsum is simply
+            dummy text of the
+            printing and typesetting</p>
+        </div>
+      </div>
+      <div class="subinfo" data-aos="fade-up">
+        <div class="five">
+          <h2>Launch</h2>
+        </div>
+        <div class="para">
+          <p>Lorem Ipsum is simply
+            dummy text of the
+            printing and typesetting</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- services div having cards  -->
+  <div id="services" class="services section" data-aos="fade-up">
+
+    <div class="head">
+      <h1>Our Services</h1>
+    </div>
+    <br>
+    <div class="our-info">
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the , when an</p>
+    </div>
+    <br><br><br>
+    <!-- in cardbody there are different elements of cards with the class column which can be modified individually -->
+    <div class="cardbody">
+      <div class="row">
+        <div class="column" data-aos="fade-up">
+          <div class="card">
+            <div class="card-img">
+              <img src="Images/team.jpg" alt="">
+            </div>
+            <div class="header">
+              <h1>UI design</h1>
+            </div>
+            <p>Lorem Ipsum is simply dummy text of the
+              printing and typesetting industry. Lorem
+              Ipsum has been the industry's standard</p>
+            <br>
+
+            <button type="button" class="cardbutton">Learn More</button>
+          </div>
+        </div>
+
+        <div class="column" data-aos="fade-up">
+          <div class="card">
+            <div class="card-img">
+              <img src="Images/frontend.jpg" alt="">
+            </div>
+
+            <div class="header">
+              <h1>Graphic design</h1>
+            </div>
+            <p>Lorem Ipsum is simply dummy text of the
+              printing and typesetting industry. Lorem
+              Ipsum has been the industry's standard</p>
+            <br>
+            <button type="button" class="cardbutton">Learn More</button>
+
+          </div>
+        </div>
+
+        <div class="column" data-aos="fade-up">
+          <div class="card">
+            <div class="card-img">
+              <img src="Images/htmlimg.jpg" alt="">
+            </div>
+            <div class="header">
+              <h1>Frontend Development</h1>
+            </div>
+            <p>Lorem Ipsum is simply dummy text of the
+              printing and typesetting industry. Lorem
+              Ipsum has been the industry's standard</p>
+            <br>
+
+            <button type="button" class="cardbutton">Learn More</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROTFOLIO  div  -->
+  <div id="protfolio" class="protfolio section" data-aos="fade-up">
+    <div class="head">
+      <h1>Our Portfolio</h1>
+    </div>
+    <br>
+    <div class="our-info">
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting </p>
 
     </div>
-    <div id="services"class="services section" data-aos="fade-up">
+    <br>
+    <div class="protfolio-tabs">
+      <ul class='tabs' data-aos="fade-up">
+        <li><a><button onclick="active(1)" class="tbtn active">ALL</button></a></li>
+        <li><a><button onclick="active(2)" class="tbtn">UI Design</button></a></li>
+        <li><a><button onclick="active(3)" class="tbtn">Graphic Design</button></a></li>
+        <li><a><button onclick="active(4)" class="tbtn">Web Development</button></a></li>
+      </ul>
+    </div>
+    <br>
+    <div class="protfolio-images">
+      <img data-aos="fade-up" src="Images/about us.jpg" alt="">
+      <img data-aos="fade-up" src="Images/about us.jpg" alt="">
+      <img data-aos="fade-up" src="Images/about us.jpg" alt="">
+      <img data-aos="fade-up" src="Images/about us.jpg" alt="">
+      <img data-aos="fade-up" src="Images/about us.jpg" alt="">
+      <img data-aos="fade-up" src="Images/about us.jpg" alt="">
 
-        <div class="head"><h1>Our Services</h1></div>
-        <br>
-      <div class="our-info">
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the , when an</p>
-      </div>
-      <br><br><br>
+    </div>
+  </div>
+
+  <!-- team div having fixed images hieght and width as cards in services div  -->
+  <div id="team" class="team section" data-aos="fade-up">
+    <div class="head">
+      <h1>Our Team</h1>
+    </div>
+    <br>
+    <div class="our-info">
+      <p>Lorem Ipsum is simply dummy text of the printing and </p>
+
+    </div>
+    <br><br>
+    <div class="team-cards">
       <div class="cardbody">
         <div class="row">
           <div class="column" data-aos="fade-up">
             <div class="card">
-              <div class="card-img">
-                <img src="Images/team.jpg" alt="">
+              <div class="card-img teamimg">
+                <img src="Images/person.jpg" alt="">
               </div>
               <div class="header">
-                <h1>UI design</h1>
+                <h1>Sai Abhilash</h1>
               </div>
-              <p>Lorem Ipsum is simply dummy text of the
-printing and typesetting industry. Lorem
-Ipsum has been the industry's standard</p>
-<br>
-
-              <button type="button" class="cardbutton">Learn More</button>
-            </div>
-          </div>
-
-          <div class="column"data-aos="fade-up">
-            <div class="card">
-              <div class="card-img">
-                <img src="Images/frontend.jpg" alt="">
-              </div>
-
-              <div class="header">
-                <h1>Graphic design</h1>
-              </div>
-              <p>Lorem Ipsum is simply dummy text of the
-printing and typesetting industry. Lorem
-Ipsum has been the industry's standard</p>
-<br>
-              <button type="button" class="cardbutton">Learn More</button>
+              <p>Graphic Designer</p>
+              <br><br><br>
 
             </div>
           </div>
 
           <div class="column" data-aos="fade-up">
             <div class="card">
-              <div class="card-img">
-                <img src="Images/htmlimg.jpg" alt="">
+              <div class="card-img teamimg">
+                <img src="Images/person.jpg" alt="">
+              </div>
+
+              <div class="header">
+                <h1>Sai Abhilash</h1>
+              </div>
+              <p>Graphic Designer</p>
+              <br><br><br>
+
+
+            </div>
+          </div>
+
+          <div class="column" data-aos="fade-up">
+            <div class="card">
+              <div class="card-img teamimg">
+                <img src="Images/person.jpg" alt="">
               </div>
               <div class="header">
-                <h1>Frontend Development</h1>
+                <h1>Sai Abhilash</h1>
               </div>
-              <p>Lorem Ipsum is simply dummy text of the
-printing and typesetting industry. Lorem
-Ipsum has been the industry's standard</p>
-<br>
-
-              <button type="button" class="cardbutton">Learn More</button>
-
+              <p>Graphic Designer</p>
+              <br><br><br>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div id="protfolio" class="protfolio section" data-aos="fade-up">
-      <div class="head">
-      <h1>Our Portfolio</h1>
-      </div>
-      <br>
-      <div class="our-info">
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting </p>
+  </div>
 
-      </div>
-      <br>
-      <div class="protfolio-tabs">
-        <ul class='tabs'data-aos="fade-up">
-          <li><a ><button onclick="active(1)"class="tbtn active">ALL</button></a></li>
-          <li><a ><button onclick="active(2)"class="tbtn">UI Design</button></a></li>
-          <li><a ><button onclick="active(3)"class="tbtn">Graphic Design</button></a></li>
-          <li><a ><button onclick="active(4)"class="tbtn">Web Development</button></a></li>
-        </ul>
-      </div>
-      <br>
-      <div class="protfolio-images">
-        <img data-aos="fade-up"src="Images/about us.jpg" alt="">
-        <img data-aos="fade-up"src="Images/about us.jpg" alt="">
-        <img data-aos="fade-up"src="Images/about us.jpg" alt="">
-        <img data-aos="fade-up"src="Images/about us.jpg" alt="">
-        <img data-aos="fade-up"src="Images/about us.jpg" alt="">
-        <img data-aos="fade-up"src="Images/about us.jpg" alt="">
-
-      </div>
-    </div>
-    <div id="team"class="team section" data-aos="fade-up">
-      <div class="head">
-        <h1>Our Team</h1>
-      </div>
-      <br>
-      <div class="our-info">
-        <p>Lorem Ipsum is simply dummy text of the printing and </p>
-
-      </div>
-      <br><br>
-      <div class="team-cards">
-        <div class="cardbody">
-          <div class="row">
-            <div class="column" data-aos="fade-up">
-              <div class="card">
-                <div class="card-img teamimg">
-                  <img src="Images/person.jpg" alt="">
-                </div>
-                <div class="header">
-                  <h1>Sai Abhilash</h1>
-                </div>
-                <p>Graphic Designer</p>
-                <br><br><br>
-
-              </div>
-            </div>
-
-            <div class="column" data-aos="fade-up">
-              <div class="card">
-                <div class="card-img teamimg">
-                  <img src="Images/person.jpg" alt="">
-                </div>
-
-                <div class="header">
-                  <h1>Sai Abhilash</h1>
-                </div>
-                <p>Graphic Designer</p>
-                <br><br><br>
-
-
-              </div>
-            </div>
-
-            <div class="column" data-aos="fade-up">
-              <div class="card">
-                <div class="card-img teamimg">
-                  <img src="Images/person.jpg" alt="">
-                </div>
-                <div class="header">
-                  <h1>Sai Abhilash</h1>
-                </div>
-                <p>Graphic Designer</p>
-<br><br><br>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="testimonials" class="testimonials section" data-aos="fade-up">
-      <div class="head">
-        <h1>Testimonials</h1>
-      </div>
-      <br>
-      <div class="our-info">
-        <p>Lorem Ipsum is simply dummy text of the 1500s, when an</p>
-      </div>
-      <br><br>
-      <div class="testimonials-corousel" data-aos="fade-up">
-        <div class="left-arrow">
-          <div> <a class="prev" onclick="plusSlides(-1)">&#10094;</a> </div>
-
-          <!-- <img style="transform: rotate(180deg); cursor: pointer;"src="Images/rightArrow.png" alt=""> -->
-        </div>
-        <div class="cardbody">
-          <div class="tcard fade">
-            <div class="testimonial-img">
-              <img src="Images/person.jpg" alt="">
-            </div>
-            <div class="info">
-              <p>"Aenean lacinia bibendum nulla sed consectetur. Donec ullamcorper nulla non metus auctor fringilla."</p>
-
-            </div>
-          </div>
-          <div class="tcard fade">
-            <div class="testimonial-img">
-              <img src="Images/person.jpg" alt="">
-            </div>
-            <div class="info">
-              <p>"Aenean lacinia bibendum nulla sed consectetur. Donec ullamcorper nulla non metus auctor fringilla."</p>
-
-            </div>
-          </div>
-          <div class="tcard fade">
-            <div class="testimonial-img">
-              <img src="Images/person.jpg" alt="">
-            </div>
-            <div class="info">
-              <p>"Aenean lacinia bibendum nulla sed consectetur. Donec ullamcorper nulla non metus auctor fringilla."</p>
-
-            </div>
-          </div>
-
-
-          <div class="tcard fade">
-            <div class="testimonial-img">
-              <img src="Images/person" alt="">
-            </div>
-            <div class="">
-              <p>Aenean lacinia bibendum nulla sed consectetur. Donec ullamcorper nulla non metus auctor fringilla.</p>
-
-            </div>
-          </div>
-
-        </div>
-        <div class="right-arrow">
-          <div> <a class="next" onclick="plusSlides(1)">&#10095;</a> </div>
-
-          <!-- <img  style=" cursor: pointer;"src="Images/rightArrow.png" alt=""> -->
-        </div>
-        </div>
-
-      </div>
+  <!-- testimonials div and we can add as many as testimonials we need  -->
+  <div id="testimonials" class="testimonials section" data-aos="fade-up">
+    <div class="head">
+      <h1>Testimonials</h1>
     </div>
     <br>
-    <br>
-    <br>
-    <br>
-    <div class="end">
-      <div class="address">
+    <div class="our-info">
+      <p>Lorem Ipsum is simply dummy text of the 1500s, when an</p>
+    </div>
+    <br><br>
+    <div class="testimonials-corousel" data-aos="fade-up">
+      <div class="left-arrow">
+        <div> <a class="prev" onclick="plusSlides(-1)">&#10094;</a> </div>
+
+        <!-- <img style="transform: rotate(180deg); cursor: pointer;"src="Images/rightArrow.png" alt=""> -->
+      </div>
+      <div class="cardbody">
+        <div class="tcard fade">
+          <div class="testimonial-img">
+            <img src="Images/person.jpg" alt="">
+          </div>
+          <div class="info">
+            <p>"Aenean lacinia bibendum nulla sed consectetur."</p>
+
+          </div>
+        </div>
+        <div class="tcard fade">
+          <div class="testimonial-img">
+            <img src="Images/person.jpg" alt="">
+          </div>
+          <div class="info">
+            <p>"Aenean lacinia tetur. Donec ullamcorper nulla non metus auctor fringilla."</p>
+
+          </div>
+        </div>
+        <div class="tcard fade">
+          <div class="testimonial-img">
+            <img src="Images/person.jpg" alt="">
+          </div>
+          <div class="info">
+            <p>"Aenean lacinia bibendum nulla sed consectetur. Donec ullamcorper nulla non metus auctor fringilla."</p>
+
+          </div>
+        </div>
+
+
+        <div class="tcard fade">
+          <div class="testimonial-img">
+            <img src="Images/person" alt="">
+          </div>
+          <div class="">
+            <p>Aenean lacinia bibendum nulla sed consectetur. Donec ullamcorper nulla non metus auctor fringilla.</p>
+
+          </div>
+        </div>
+
+      </div>
+      <div class="right-arrow">
+        <div> <a class="next" onclick="plusSlides(1)">&#10095;</a> </div>
+
+        <!-- <img  style=" cursor: pointer;"src="Images/rightArrow.png" alt=""> -->
+      </div>
+    </div>
+
+  </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="end">
+    <div class="address">
       <div class="header">
-      <h2>Address</h2>
+        <h2>Address</h2>
       </div>
       <br>
       <div class="endpara">
-      <p>A108 Adam Street</p>
-      <p>New York, NY 535022</p>
-      <p>United States</p>
-    </div>
-    <br>
+        <p>A108 Adam Street</p>
+        <p>New York, NY 535022</p>
+        <p>United States</p>
+      </div>
+      <br>
 
       <div class="phone">
         <div class="para">
           <h3>Phone:</h3>
         </div>
-          <p>+919999999999</p>
+        <p>+919999999999</p>
 
       </div>
       <div class="mail">
@@ -406,114 +472,53 @@ Ipsum has been the industry's standard</p>
         </div>
         <p>Example@gmail.com</p>
       </div>
-      </div>
-      <br class="mobile">
-      <br class="mobile">
+    </div>
+    <br class="mobile">
+    <br class="mobile">
 
-      <div class="links">
-        <div class="header">
+    <div class="links">
+      <div class="header">
         <h2>Useful Links</h2>
-        </div>
-        <br>
-        <div class="">
-          <ul class='end-links'>
-            <li><a href="#home"><button class="bn">＞ Home</button></a></li>
-            <li><a href="#explore"><button class="bn">＞ Explore</button></a></li>
-            <li><a href="#services"><button class="bn">＞ Services</button></a></li>
-            <li><a href="#protfolio"><button class="bn">＞ Protfolio</button></a></li>
-            <li><a href="#team"><button class="bn">＞ Our Team</button></a></li>
-            <li><a href="#testimonials"><button class="bn">＞ Testimonials</button></a></li>
-          </ul>
-        </div>
       </div>
-      <br class="mobile">
-      <br class="mobile">
-
-      <div class="end-services">
-        <div class="header">
-        <h2>Our Services</h2>
-        </div>
-        <br>
-        <div class="">
-          <ul class='end-links'>
-            <li><a href="/"><button class="bn">＞ UI Design</button></a></li>
-            <li><a href="/"><button class="bn">＞ Web Design</button></a></li>
-            <li><a href="/"><button class="bn">＞ Graphic Design</button></a></li>
-            <li><a href="/"><button class="bn">＞ Logo Design</button></a></li>
-            <li><a href="/"><button class="bn">＞ Web Development</button></a></li>
-          </ul>
-        </div>
+      <br>
+      <div class="">
+        <ul class='end-links'>
+          <li><a href="#home"><button class="bn">＞ Home</button></a></li>
+          <li><a href="#explore"><button class="bn">＞ Explore</button></a></li>
+          <li><a href="#services"><button class="bn">＞ Services</button></a></li>
+          <li><a href="#protfolio"><button class="bn">＞ Protfolio</button></a></li>
+          <li><a href="#team"><button class="bn">＞ Our Team</button></a></li>
+          <li><a href="#testimonials"><button class="bn">＞ Testimonials</button></a></li>
+        </ul>
       </div>
     </div>
-    <footer>
-      <div class="copyright">
-        <p>Copyright @ 2021</p>
-        <p>Designed By Gradient</p>
+    <br class="mobile">
+    <br class="mobile">
+
+    <div class="end-services">
+      <div class="header">
+        <h2>Our Services</h2>
       </div>
-    </footer>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      offset: 400,
-      duration: 1000
-    });
-    function openNav() {
-    document.getElementById("mobile__menu").style.width = "100%";
-}
+      <br>
+      <div class="">
+        <ul class='end-links'>
+          <li><a href="/"><button class="bn">＞ UI Design</button></a></li>
+          <li><a href="/"><button class="bn">＞ Web Design</button></a></li>
+          <li><a href="/"><button class="bn">＞ Graphic Design</button></a></li>
+          <li><a href="/"><button class="bn">＞ Logo Design</button></a></li>
+          <li><a href="/"><button class="bn">＞ Web Development</button></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="copyright">
+      <p>Copyright @ 2021</p>
+      <p>Designed By Gradient</p>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="home.js"></script>
+</body>
 
-function closeNav() {
-    document.getElementById("mobile__menu").style.width = "0";
-}
-var slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("tcard");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  slides[slideIndex-1].style.display = "flex";
-}
-function active(n) {
-  const protfolio = document.getElementsByClassName("tbtn");
-  for (i = 0; i < protfolio.length; i++) {
-      protfolio[i].classList.remove('active')
-  }
-  protfolio[n-1].classList.add('active')
-}
-const sections = document.querySelectorAll(".section");
-const navLi = document.querySelectorAll("nav ul li");
-window.addEventListener("scroll", () => {
-  let current = "";
-  sections.forEach((section) => {
-    const sectionTop = section.offsetTop;
-    const sectionHeight = section.clientHeight;
-    if (pageYOffset >= sectionTop - sectionHeight/1.5) {
-      current = section.getAttribute("id");
-    }
-  });
-
-   navLi.forEach((li) => {
-     li.classList.remove("active");
-     if (li.classList.contains("li"+current)) {
-       li.classList.add("active");
-     }
-   });
-});
-
-  </script>
-  </body>
 </html>
