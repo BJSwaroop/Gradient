@@ -14,12 +14,12 @@
             </div>
             <nav>
                 <ul class="nav__links">
-                    <li><a href="#home"><button class="bn29">HOME</button></a></li>
-                    <li><a href="#explore"><button class="bn29">EXPLORE</button></a></li>
-                    <li><a href="#services"><button class="bn29">SERVICES</button></a></li>
-                    <li><a href="#protfolio"><button class="bn29">PROTFOLIO</button></a></li>
-                    <li><a href="#team"><button class="bn29">OUR TEAM</button></a></li>
-                    <li><a href="#testimonials"><button class="bn29">TESTIMONIALS</button></a></li>
+                    <li class="lihome"><a href="#home"><button class="bn29">HOME</button></a></li>
+                    <li class="liresearch"><a href="#research"><button class="bn29">EXPLORE</button></a></li>
+                    <li class="liservices"><a href="#services"><button class="bn29">SERVICES</button></a></li>
+                    <li class="liprotfolio"><a href="#protfolio"><button class="bn29">PROTFOLIO</button></a></li>
+                    <li class="liteam"><a href="#team"><button class="bn29">OUR TEAM</button></a></li>
+                    <li class="litestimonials"><a href="#testimonials"><button class="bn29">TESTIMONIALS</button></a></li>
                     <button class="button"><span>Contact Us</span></button>
                 </ul>
             </nav>
@@ -48,7 +48,7 @@
                 <button class="button"><span>Contact Us</span></button>
             </div>
         </div>
-    <div id="home" class="intro" data-aos="fade-up">
+    <div id="home" class="intro section" data-aos="fade-up">
       <div class="head"><h1>Hi, We are from Gradient</h1></div>
     <div class="intro-info" data-aos="fade-up">
       <p>Pellentesque habitant morbi tristique senectus et netus et malesuada
@@ -62,7 +62,7 @@
       <button type="button" name="button">Bussiness</button>
     </div>
     </div>
-    <div id="research"class="research" >
+    <div id="research"class="research section" >
       <div class="head mobile" data-aos="fade-up"><h1>Research</h1></div>
 
   <img data-aos="fade-up" src="Images/research.svg"alt="reaserch-img">
@@ -158,7 +158,7 @@ printing and typesetting</p>
       </div>
 
     </div>
-    <div id="services"class="services" data-aos="fade-up">
+    <div id="services"class="services section" data-aos="fade-up">
 
         <div class="head"><h1>Our Services</h1></div>
         <br>
@@ -223,7 +223,7 @@ Ipsum has been the industry's standard</p>
         </div>
       </div>
     </div>
-    <div id="protfolio" class="protfolio" data-aos="fade-up">
+    <div id="protfolio" class="protfolio section" data-aos="fade-up">
       <div class="head">
       <h1>Our Portfolio</h1>
       </div>
@@ -252,7 +252,7 @@ Ipsum has been the industry's standard</p>
 
       </div>
     </div>
-    <div id="team"class="team" data-aos="fade-up">
+    <div id="team"class="team section" data-aos="fade-up">
       <div class="head">
         <h1>Our Team</h1>
       </div>
@@ -311,7 +311,7 @@ Ipsum has been the industry's standard</p>
         </div>
       </div>
     </div>
-    <div id="testimonials" class="testimonials" data-aos="fade-up">
+    <div id="testimonials" class="testimonials section" data-aos="fade-up">
       <div class="head">
         <h1>Testimonials</h1>
       </div>
@@ -494,6 +494,25 @@ function active(n) {
   }
   protfolio[n-1].classList.add('active')
 }
+const sections = document.querySelectorAll(".section");
+const navLi = document.querySelectorAll("nav ul li");
+window.addEventListener("scroll", () => {
+  let current = "";
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.clientHeight;
+    if (pageYOffset >= sectionTop - sectionHeight/1.5) {
+      current = section.getAttribute("id");
+    }
+  });
+
+   navLi.forEach((li) => {
+     li.classList.remove("active");
+     if (li.classList.contains("li"+current)) {
+       li.classList.add("active");
+     }
+   });
+});
 
   </script>
   </body>

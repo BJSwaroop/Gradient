@@ -381,6 +381,7 @@ line-height: 2;
   margin-top: 15rem;
  height: 100%
 }
+
 .info{
   width: 80%;
   font-size: 1rem;
@@ -787,4 +788,8 @@ footer{
   .teamimg img{
     height: 53rem;
   }
+}
+
+nav li.active a .bn29{
+  color: blue;
 }
