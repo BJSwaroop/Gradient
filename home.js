@@ -1,6 +1,6 @@
 AOS.init({
   offset: 400,
-  duration: 1000
+  duration: 700
 });
 
 function openNav() {
