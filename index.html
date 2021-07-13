@@ -235,10 +235,10 @@ Ipsum has been the industry's standard</p>
       <br>
       <div class="protfolio-tabs">
         <ul class='tabs'data-aos="fade-up">
-          <li><a href="/"><button class="tbtn active">ALL</button></a></li>
-          <li><a href="/"><button class="tbtn">UI Design</button></a></li>
-          <li><a href="/"><button class="tbtn">Graphic Design</button></a></li>
-          <li><a href="/"><button class="tbtn">Web Development</button></a></li>
+          <li><a ><button onclick="active(1)"class="tbtn active">ALL</button></a></li>
+          <li><a ><button onclick="active(2)"class="tbtn">UI Design</button></a></li>
+          <li><a ><button onclick="active(3)"class="tbtn">Graphic Design</button></a></li>
+          <li><a ><button onclick="active(4)"class="tbtn">Web Development</button></a></li>
         </ul>
       </div>
       <br>
@@ -322,10 +322,12 @@ Ipsum has been the industry's standard</p>
       <br><br>
       <div class="testimonials-corousel" data-aos="fade-up">
         <div class="left-arrow">
-          <img style="transform: rotate(180deg); cursor: pointer;"src="Images/rightArrow.png" alt="">
+          <div> <a class="prev" onclick="plusSlides(-1)">&#10094;</a> </div>
+
+          <!-- <img style="transform: rotate(180deg); cursor: pointer;"src="Images/rightArrow.png" alt=""> -->
         </div>
         <div class="cardbody">
-          <div class="tcard disable">
+          <div class="tcard fade">
             <div class="testimonial-img">
               <img src="Images/person.jpg" alt="">
             </div>
@@ -334,7 +336,16 @@ Ipsum has been the industry's standard</p>
 
             </div>
           </div>
-          <div class="tcard active">
+          <div class="tcard fade">
+            <div class="testimonial-img">
+              <img src="Images/person.jpg" alt="">
+            </div>
+            <div class="info">
+              <p>"Aenean lacinia bibendum nulla sed consectetur. Donec ullamcorper nulla non metus auctor fringilla."</p>
+
+            </div>
+          </div>
+          <div class="tcard fade">
             <div class="testimonial-img">
               <img src="Images/person.jpg" alt="">
             </div>
@@ -345,7 +356,7 @@ Ipsum has been the industry's standard</p>
           </div>
 
 
-          <div class="tcard disable">
+          <div class="tcard fade">
             <div class="testimonial-img">
               <img src="Images/person" alt="">
             </div>
@@ -357,7 +368,9 @@ Ipsum has been the industry's standard</p>
 
         </div>
         <div class="right-arrow">
-          <img  style=" cursor: pointer;"src="Images/rightArrow.png" alt="">
+          <div> <a class="next" onclick="plusSlides(1)">&#10095;</a> </div>
+
+          <!-- <img  style=" cursor: pointer;"src="Images/rightArrow.png" alt=""> -->
         </div>
         </div>
 
@@ -441,8 +454,8 @@ Ipsum has been the industry's standard</p>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init({
-      offset: 0,
-      duration: 600
+      offset: 400,
+      duration: 1000
     });
     function openNav() {
     document.getElementById("mobile__menu").style.width = "100%";
@@ -451,23 +464,35 @@ Ipsum has been the industry's standard</p>
 function closeNav() {
     document.getElementById("mobile__menu").style.width = "0";
 }
-const cards = document.querySelectorAll('.tcard')
-const right = document.querySelector('.right-arrow')
-cards.forEach((panel) => {
-    right.addEventListener('click',() => {
-        removeActiveclasses()
-        panel.classList.add('active')
-        panel.classList.remove('disable')
+var slideIndex = 1;
+showSlides(slideIndex);
 
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
 
-    })
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
 
-})
-function removeActiveclasses() {
-  panels.forEach(panel => {
-    panel.classList.remove('active')
-
-  })
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("tcard");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  slides[slideIndex-1].style.display = "flex";
+}
+function active(n) {
+  const protfolio = document.getElementsByClassName("tbtn");
+  for (i = 0; i < protfolio.length; i++) {
+      protfolio[i].classList.remove('active')
+  }
+  protfolio[n-1].classList.add('active')
 }
 
   </script>
