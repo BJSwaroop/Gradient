@@ -470,7 +470,9 @@ footer {
   header {
     height: 6rem;
   }
-
+  .intro {
+    height: 100vh;
+  }
   .nav__links, .cta {
     display: none;
   }
