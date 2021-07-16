@@ -7,6 +7,8 @@
 * {
   padding: 0;
   margin: 0;
+  color: #262626;
+
 }
 
 body {
@@ -36,6 +38,7 @@ header nav ul {
 }
 
 li, a {
+
   list-style: none;
   text-decoration: none;
 }
@@ -53,45 +56,12 @@ li, a {
   transition: all 0.5s ease 0s;
 }
 
-.bn29 {
-  border: none;
-  padding: 0.8em 1em;
-  outline: none;
-  color: #000;
-  font-weight: bold;
-  font-style: 2em;
-  position: relative;
-  z-index: 1;
-  cursor: pointer;
-  background: none;
-  transition: 0.5s;
-}
 
-.bn29:hover:after {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  border-radius: 10em;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-  width: 105%;
-  height: 105%;
-  content: "";
-  z-index: -2;
-  background-size: 400% 400%;
-  background: linear-gradient(180deg,
-      white,
-      lightgrey);
-}
 
 nav li.active a .bn29 {
-  color: blue;
+  color: var(--b);
 }
 
-.bn29:hover:before {
-  width: 115%;
-  height: 115%;
-}
 
 .overlay__content {
   display: flex;
@@ -120,6 +90,7 @@ button {
   padding: 7px 15px;
   background-color: var(--bg);
   border: none;
+  font-weight: bold;
   border-radius: 50px;
   cursor: pointer;
   transition: all 0.3s ease 0s;
@@ -179,7 +150,7 @@ button {
 }
 
 .intro {
-  height: 80vh;
+  height: 100vh;
 }
 
 .intro-buttons button, .button, .cardbutton {
@@ -404,7 +375,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  color: white;
+ 
 }
 
 .address {
