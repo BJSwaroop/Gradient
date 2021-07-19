@@ -1,3 +1,7 @@
+AOS.init({
+  offset: 100,
+  duration: 1000
+});
 
 function openNav() {
   document.getElementById("mobile__menu").style.width = "100%";
