@@ -61,8 +61,9 @@ li, a {
 }
 
 .card:hover{
-  transition: 1s;
+  transition: 0.5s;
     box-shadow: 15px 15px 15px #cccccc, -15px -15px 15px #f4f4f4;
+    
 }
 
 nav li.active a .bn29 {
