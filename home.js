@@ -3,6 +3,10 @@ AOS.init({
   duration: 1000
 });
 
+
+// Scrolling effects
+
+// for hamburger icon
 function openNav() {
   document.getElementById("mobile__menu").style.width = "100%";
 }

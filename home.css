@@ -8,7 +8,11 @@
   padding: 0;
   margin: 0;
   color: #262626;
+}
 
+html{
+  scroll-behavior: smooth;
+  overflow-y: scroll;
 }
 
 body {
@@ -171,6 +175,9 @@ button {
   background-color: var(--bg);
   border-radius: 2rem;
 }
+.card::afterhover{
+    box-shadow: 15px 15px 15px #cccccc, -15px -15px 15px #f4f4f4;
+}
 
 .row {
   display: flex;
@@ -237,6 +244,7 @@ button {
   width: 25rem;
   height: 20rem;
 }
+
 
 .image {
   opacity: 1;
@@ -375,7 +383,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
- 
+
 }
 
 .address {
