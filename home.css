@@ -175,9 +175,7 @@ button {
   background-color: var(--bg);
   border-radius: 2rem;
 }
-.card:hover{
-    box-shadow: 15px 15px 15px #cccccc, -15px -15px 15px #f4f4f4;
-}
+
 
 .row {
   display: flex;
@@ -937,4 +935,7 @@ footer {
     height: 22rem;
     border-radius: 2rem;
   }
+}
+.card:hover{
+    box-shadow: 15px 15px 15px #cccccc, -15px -15px 15px #f4f4f4;
 }
