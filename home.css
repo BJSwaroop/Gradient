@@ -61,6 +61,7 @@ li, a {
 }
 
 .card:hover{
+  transition: 1s;
     box-shadow: 15px 15px 15px #cccccc, -15px -15px 15px #f4f4f4;
 }
 
