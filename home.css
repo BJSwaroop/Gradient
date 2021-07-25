@@ -63,7 +63,7 @@ li, a {
 .card:hover{
   transition: 0.5s;
     box-shadow: 15px 15px 15px #cccccc, -15px -15px 15px #f4f4f4;
-    
+
 }
 
 nav li.active a .bn29 {
@@ -142,7 +142,8 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 10rem;
+  margin-top: 5rem;
+  padding-top: 6rem;
   height: 100%;
 }
 
@@ -921,7 +922,8 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 15rem;
+    margin-top: 10rem;
+    padding-top: 5rem;
     height: 100%
   }
 
