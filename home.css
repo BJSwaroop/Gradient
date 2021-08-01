@@ -60,7 +60,7 @@ li, a {
   transition: all 0.5s ease 0s;
 }
 
-.card:hover{
+.card:hover, .tcard:hover{
   transition: 0.5s;
     box-shadow: 15px 15px 15px #cccccc, -15px -15px 15px #f4f4f4;
 
