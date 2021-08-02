@@ -198,6 +198,7 @@ button {
   float: left;
   width: 25%;
   padding: 0 10px;
+  margin-bottom: 2rem;
 }
 
 /* Remove extra left and right margins, due to padding */
@@ -942,5 +943,8 @@ footer {
     width: 100%;
     height: 22rem;
     border-radius: 2rem;
+  }
+  .testimonials{
+    height: 60vh;
   }
 }
