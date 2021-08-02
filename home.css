@@ -42,7 +42,7 @@ header nav ul {
 }
 
 li, a {
-  padding: 0.2rem;
+
   list-style: none;
   text-decoration: none;
 }
@@ -142,7 +142,7 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 3rem;
+  margin-top: 5rem;
   padding-top: 6rem;
   height: 100%;
 }
@@ -157,19 +157,13 @@ button {
   text-align: left;
   line-height: 2;
 }
-.research{
-  padding-top: 10rem;
-}
+
 .intro {
   height: 100vh;
 }
-.intro-buttons{
-  width:30rem;
-  display: flex;
-  justify-content: space-around;
-}
+
 .intro-buttons button, .button, .cardbutton {
-  padding: 0.8rem 3.8rem;
+  padding: 0.8rem 3rem;
   color: #fff;
   background-color: var(--b);
   font-size: 1rem;
@@ -348,11 +342,14 @@ button {
 }
 
 .copyright {
-    align-items: center;
-    display: flex;
-    justify-content: flex-end;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
-
+.footer-icons{
+  display: flex;
+  padding: 1rem;
+}
 footer {
   padding: 0.3rem;
   background-color: var(--db);
@@ -407,11 +404,7 @@ footer {
   display: flex;
   align-items: center;
 }
-.footer-info{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+
 .phone p, .mail p {
   padding-left: 1rem;
 }
@@ -420,7 +413,12 @@ footer {
   padding: 0.2rem;
 }
 
-
+.copyright {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 footer {
   padding: 0.3rem;
@@ -452,14 +450,7 @@ footer {
   body {
     background-color: var(--bg);
   }
-  .copyright{
-    flex-direction: column;
-    justify-content: space-around;
-    height:7rem;
-  }
-  .footer-icons{
-    display: flex;
-  }
+
   header {
     height: 6rem;
   }
@@ -503,11 +494,11 @@ footer {
   }
 
   .intro-buttons {
-    height: 12rem;
+    height: 8rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
 
   .intro-buttons button, .button, .cardbutton {
@@ -608,7 +599,7 @@ footer {
   }
 
   .tbtn {
-    font-size: 0.65rem;
+    font-size: 0.6rem;
     padding: 0.3rem 0.8rem;
     border: 1px solid var(--bg);
     background-color: var(--bg);
@@ -637,10 +628,7 @@ footer {
     border-radius: 2rem;
     padding-top: 2rem;
   }
- ul.tabs{
-   width: 90vw;
 
- }
   .end {
     padding: 1rem 2rem;
     display: flex;
@@ -772,11 +760,7 @@ footer {
     flex-direction: column;
     justify-content: space-evenly;
   }
-  .footer-icons{
-    margin-left: 20rem;
-    display: flex;
 
-  }
   .sub {
     font-size: 1rem;
   }
@@ -958,10 +942,5 @@ footer {
     width: 100%;
     height: 22rem;
     border-radius: 2rem;
-  }
-
-  .footer-icons{
-    padding-left: 35rem;
-    display: flex;
   }
 }
