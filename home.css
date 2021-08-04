@@ -600,12 +600,13 @@ footer {
   }
 
   .tbtn {
-    font-size: 0.6rem;
-    padding: 0.3rem 0.8rem;
-    border: 1px solid var(--bg);
-    background-color: var(--bg);
-    cursor: pointer;
-    border-radius: 35px;
+    font-size: 0.7rem;
+        padding: 0.4rem 0.8rem;
+        border: 1px solid var(--bg);
+        background-color: var(--bg);
+        cursor: pointer;
+        border-radius: 35px;
+        margin: 0.2rem;
   }
 
   .tbtn.active {
@@ -934,14 +935,26 @@ footer {
     font-size: 1.5rem;
     padding: 1rem;
   }
-
-  .column {
-    width: 23rem;
+.services .column{
+  width: 17rem;
+}
+.services .column img{
+  width: 15rem;
+}
+.services .column h1{
+  font-size: 1.1rem;
+}
+.services .column p{
+  font-size: 0.9rem;
+}
+  .team-cards .column {
+    width: 16rem;
   }
+
 
   .teamimg img {
     width: 100%;
-    height: 22rem;
+    height: 14rem;
     border-radius: 2rem;
   }
   .testimonials{
