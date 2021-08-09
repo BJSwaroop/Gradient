@@ -283,7 +283,9 @@ button {
   width: 8rem;
   border-radius: 2rem;
 }
-
+.nav-head img{
+  width: 14rem;
+}
 .cardbody {
   display: contents;
 }
@@ -399,7 +401,9 @@ footer {
 .end-services {
   align-items: flex-end;
 }
-
+.our-info{
+  text-align: center;
+}
 .phone, .mail {
   width: 100%;
   display: flex;
@@ -703,7 +707,7 @@ footer {
   }
 
   .intro p {
-    width: 68%;
+    width: 100%;
     font-size: 1rem;
     font-weight: bold;
     word-spacing: 0.1rem;
@@ -834,7 +838,9 @@ footer {
   body {
     background-color: var(--bg);
   }
-
+.research{
+  padding-top: 124px;
+}
   .mobile {
     display: none;
   }
@@ -867,7 +873,7 @@ footer {
   }
 
   .intro p {
-    width: 48%;
+    width: 100%;
     font-size: 1rem;
     font-weight: bold;
     word-spacing: 0.1rem;
