@@ -620,8 +620,6 @@ footer {
   }
 
   .tcard {
-    width: 60%;
-    display: contents;
     flex-direction: column;
   }
 
@@ -655,7 +653,12 @@ footer {
   body {
     background-color: var(--bg);
   }
-
+  .footer-icons{
+    display: flex;
+    right: 0;
+    position: absolute;
+    padding: 1.2rem;
+  }
   header {
     height: 8rem;
   }
@@ -840,10 +843,26 @@ footer {
 .research{
   padding-top: 124px;
 }
+.team-card{
+  display: none;
+}
+.team-cards .cardbody .row .active{
+
+  display: flex;
+  flex-direction: column;
+}
+.footer-icons{
+  display: flex;
+  right: 0;
+  position: absolute;
+  padding: 1.2rem;
+}
   .mobile {
     display: none;
   }
-
+  .homehead{
+    width: 50%;
+  }
   header {
     width: 100vw;
     position: fixed;
